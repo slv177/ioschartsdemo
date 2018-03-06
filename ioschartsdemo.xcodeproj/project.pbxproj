@@ -12,7 +12,48 @@
 		50025C3E204E84A700EA07E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50025C3C204E84A700EA07E0 /* Main.storyboard */; };
 		50025C40204E84A700EA07E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50025C3F204E84A700EA07E0 /* Assets.xcassets */; };
 		50025C43204E84A700EA07E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50025C41204E84A700EA07E0 /* LaunchScreen.storyboard */; };
+		50025C53204E88F200EA07E0 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50025C50204E879500EA07E0 /* Charts.framework */; };
+		50025C54204E88F200EA07E0 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50025C50204E879500EA07E0 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50025C5A204EA95700EA07E0 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50025C59204EA95700EA07E0 /* DataGenerator.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50025C4F204E879500EA07E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50025C4A204E879500EA07E0 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		50025C51204E879500EA07E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50025C4A204E879500EA07E0 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		50025C55204E88F200EA07E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50025C4A204E879500EA07E0 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50025C57204E88F200EA07E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50025C54204E88F200EA07E0 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		50025C35204E84A700EA07E0 /* ioschartsdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ioschartsdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +63,8 @@
 		50025C3F204E84A700EA07E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50025C42204E84A700EA07E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50025C44204E84A700EA07E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50025C4A204E879500EA07E0 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		50025C59204EA95700EA07E0 /* DataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50025C53204E88F200EA07E0 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +84,7 @@
 			children = (
 				50025C37204E84A700EA07E0 /* ioschartsdemo */,
 				50025C36204E84A700EA07E0 /* Products */,
+				50025C4A204E879500EA07E0 /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +102,21 @@
 				50025C38204E84A700EA07E0 /* AppDelegate.swift */,
 				50025C3A204E84A700EA07E0 /* ViewController.swift */,
 				50025C3C204E84A700EA07E0 /* Main.storyboard */,
+				50025C59204EA95700EA07E0 /* DataGenerator.swift */,
 				50025C3F204E84A700EA07E0 /* Assets.xcassets */,
 				50025C41204E84A700EA07E0 /* LaunchScreen.storyboard */,
 				50025C44204E84A700EA07E0 /* Info.plist */,
 			);
 			path = ioschartsdemo;
+			sourceTree = "<group>";
+		};
+		50025C4B204E879500EA07E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50025C50204E879500EA07E0 /* Charts.framework */,
+				50025C52204E879500EA07E0 /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +129,12 @@
 				50025C31204E84A700EA07E0 /* Sources */,
 				50025C32204E84A700EA07E0 /* Frameworks */,
 				50025C33204E84A700EA07E0 /* Resources */,
+				50025C57204E88F200EA07E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				50025C56204E88F200EA07E0 /* PBXTargetDependency */,
 			);
 			name = ioschartsdemo;
 			productName = ioschartsdemo;
@@ -111,12 +168,35 @@
 			mainGroup = 50025C2C204E84A700EA07E0;
 			productRefGroup = 50025C36204E84A700EA07E0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50025C4B204E879500EA07E0 /* Products */;
+					ProjectRef = 50025C4A204E879500EA07E0 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50025C34204E84A700EA07E0 /* ioschartsdemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		50025C50204E879500EA07E0 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 50025C4F204E879500EA07E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50025C52204E879500EA07E0 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 50025C51204E879500EA07E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		50025C33204E84A700EA07E0 /* Resources */ = {
@@ -136,12 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50025C5A204EA95700EA07E0 /* DataGenerator.swift in Sources */,
 				50025C3B204E84A700EA07E0 /* ViewController.swift in Sources */,
 				50025C39204E84A700EA07E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50025C56204E88F200EA07E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 50025C55204E88F200EA07E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50025C3C204E84A700EA07E0 /* Main.storyboard */ = {
@@ -273,6 +362,7 @@
 		50025C48204E84A700EA07E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWV3ZUC9B8;
@@ -288,6 +378,7 @@
 		50025C49204E84A700EA07E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWV3ZUC9B8;
